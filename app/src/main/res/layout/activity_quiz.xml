@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quiz_background_color"
+    tools:context="com.example.nitishkumar.quizzapp.QuizActivity">
+
+    <VideoView
+        android:id="@+id/quiz_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/quix_logo_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/quiz_logo_left_margin"
+        android:layout_marginTop="@dimen/quiz_logo_top_margin" />
+
+    <VideoView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/quiz_question_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz_logo"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/question_no_bottom_top_margin"
+        android:layout_marginLeft="@dimen/question_no_left_right_margin"
+        android:layout_marginTop="@dimen/question_no_bottom_top_margin"
+        android:background="@drawable/set_border"
+        android:padding="@dimen/question_no_padding"
+        android:text=""
+        android:textColor="@color/question_layout_text_color"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="@dimen/question_max_text_size"
+        android:autoSizeMinTextSize="@dimen/question_no_min_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quiz_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/question_height"
+        android:layout_below="@+id/quiz_question_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/question_no_left_right_margin"
+        android:background="@drawable/set_border"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/question_layout_text_color"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="@dimen/question_max_text_size"
+        android:autoSizeMinTextSize="@dimen/question_no_min_text_size"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/opt1_opt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz_question_text"
+        android:layout_marginTop="@dimen/question_no_bottom_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/opt1"
+            android:layout_width="@dimen/option_width"
+            android:layout_height="@dimen/option_height"
+            android:layout_marginLeft="@dimen/question_no_left_right_margin"
+            android:layout_marginRight="@dimen/question_no_left_right_margin"
+            android:layout_weight="1"
+            android:background="@drawable/set_border"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/question_layout_text_color"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="@dimen/question_max_text_size"
+            android:autoSizeMinTextSize="@dimen/question_no_min_text_size"
+            android:textStyle="bold"
+            android:onClick="optionONE"/>
+
+        <TextView
+            android:id="@+id/opt2"
+            android:layout_width="@dimen/option_width"
+            android:layout_height="@dimen/option_height"
+            android:layout_marginRight="@dimen/question_no_left_right_margin"
+            android:layout_weight="1"
+            android:background="@drawable/set_border"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/question_layout_text_color"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="@dimen/question_max_text_size"
+            android:autoSizeMinTextSize="@dimen/question_no_min_text_size"
+            android:textStyle="bold"
+            android:onClick="optionTWO"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opt3_opt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opt1_opt2"
+        android:layout_marginTop="@dimen/question_no_bottom_top_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/opt3"
+            android:layout_width="@dimen/option_width"
+            android:layout_height="@dimen/option_height"
+            android:layout_marginLeft="@dimen/question_no_left_right_margin"
+            android:layout_marginRight="@dimen/question_no_left_right_margin"
+            android:layout_weight="1"
+            android:background="@drawable/set_border"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/question_layout_text_color"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="@dimen/question_max_text_size"
+            android:autoSizeMinTextSize="@dimen/question_no_min_text_size"
+            android:textStyle="bold"
+            android:onClick="optionTHREE"/>
+
+        <TextView
+            android:id="@+id/opt4"
+            android:layout_width="@dimen/option_width"
+            android:layout_height="@dimen/option_height"
+            android:layout_marginRight="@dimen/question_no_left_right_margin"
+            android:layout_weight="1"
+            android:background="@drawable/set_border"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/question_layout_text_color"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="@dimen/question_max_text_size"
+            android:autoSizeMinTextSize="@dimen/question_no_min_text_size"
+            android:textStyle="bold"
+            android:onClick="optionFOUR"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/next_quest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/question_no_left_right_margin"
+        android:background="@drawable/set_border"
+        android:gravity="center"
+        android:onClick="next_question"
+        android:text="@string/next_button_text"
+        android:textColor="@color/question_layout_text_color"
+        android:textSize="@dimen/next_button_text_size"
+        android:textStyle="bold" />
+</RelativeLayout>

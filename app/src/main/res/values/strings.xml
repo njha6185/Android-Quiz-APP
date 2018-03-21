@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="playButton">PLAY\nQUIZ</string>
+    <string name="welcome_text_font_family">cursive</string>
+    <string name="welcome_screen_head1">\"ANDROID QUIZ :)\"</string>
+    <string name="welcome_screen_head2">\"Best Of Luck \"</string>
+    <string name="welcome_screen_java_text_color">#ffaaaa</string>
+    <string name="popup_msg_fontfamily">monospace</string>
+    <string name="popup_restart_button_text">RESTART</string>
+    <string name="popup_close_button_text">CLOSE</string>
+    <string name="next_button_text"><![CDATA[NEXT ->]]></string>
+    <string name="message_part1">You Got (</string>
+    <string name="message_part2">) Question Right Out of 10.  What Would you like to do?</string>
+    <string name="question_no_dotandgap">\ .\ </string>
+    <string name="slash">/</string>
+</resources>

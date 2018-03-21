@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="play_button_padding">20dp</dimen>
+    <dimen name="play_button_bottom_margin">10dp</dimen>
+    <dimen name="play_button_text_size">30sp</dimen>
+    <dimen name="bulb_top_margin">100dp</dimen>
+    <dimen name="bulb_image_scale">2</dimen>
+    <dimen name="welcome_text_top_margin">20dp</dimen>
+    <dimen name="welcome_text_size">35sp</dimen>
+    <dimen name="welcome_text_bottom_margin">150dp</dimen>
+    <dimen name="popup_layout_padding">20dp</dimen>
+    <dimen name="popup_msg_text_size">20sp</dimen>
+    <dimen name="popup_button_width">0dp</dimen>
+    <dimen name="popup_button_margin">8dp</dimen>
+    <dimen name="popup_button_padding">18dp</dimen>
+    <dimen name="quix_logo_height">100dp</dimen>
+    <dimen name="quiz_logo_left_margin">20dp</dimen>
+    <dimen name="quiz_logo_top_margin">20dp</dimen>
+    <dimen name="question_no_bottom_top_margin">10dp</dimen>
+    <dimen name="question_no_left_right_margin">20dp</dimen>
+    <dimen name="question_max_text_size">25sp</dimen>
+    <dimen name="question_no_min_text_size">20sp</dimen>
+    <dimen name="question_height">100dp</dimen>
+    <dimen name="option_width">0dp</dimen>
+    <dimen name="option_height">80dp</dimen>
+    <dimen name="next_button_text_size">20sp</dimen>
+    <dimen name="question_no_padding">20dp</dimen>
+</resources>

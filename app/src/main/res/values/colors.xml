@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="welcome_text_color">#ffff</color>
+    <color name="popup_bg_color">#266</color>
+    <color name="popup_msg_text_color">#FFFFFF</color>
+    <color name="quiz_background_color">#000000</color>
+    <color name="question_layout_text_color">#ffffff</color>
+</resources>

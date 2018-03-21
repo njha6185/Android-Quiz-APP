@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/popup_bg_color"
+    android:padding="@dimen/popup_layout_padding">
+
+    <TextView
+        android:id="@+id/popuptextdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/popup_msg_text_size"
+        android:gravity="center"
+        android:textColor="@color/popup_msg_text_color"
+        android:textStyle="bold"
+        android:fontFamily="@string/popup_msg_fontfamily"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/retrybutton"
+            android:layout_width="@dimen/popup_button_width"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/popup_restart_button_text"
+            android:textSize="@dimen/popup_msg_text_size"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/popup_button_margin"
+            android:fontFamily="monospace"
+            android:padding="@dimen/popup_button_padding"
+            android:textStyle="bold"
+            android:onClick="retryQuiz"/>
+        <Button
+            android:id="@+id/closebutton"
+            android:layout_width="@dimen/popup_button_width"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/popup_close_button_text"
+            android:textSize="@dimen/popup_msg_text_size"
+            android:layout_margin="@dimen/popup_button_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/popup_button_padding"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:onClick="closeQuiz"/>
+    </LinearLayout>
+
+</LinearLayout>
